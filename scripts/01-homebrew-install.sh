@@ -3,3 +3,6 @@
 # install homebrew
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew doctor
+
+brew install git-lfs
+brew install caskroom/cask/gpg-suite
