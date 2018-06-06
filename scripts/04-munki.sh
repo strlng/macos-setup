@@ -25,7 +25,7 @@ optionalDefaults=("Atom"
 
 # Check to see if the file exists. If it doesn't, you may have to create it with an empty array; otherwise,
 if [ ! -f "$manifestLocation" ]; then
-   "$plistBuddy" -c "Add :managed_installs array" "$manifestLocation"
+  "$plistBuddy" -c "Add :managed_installs array" "$manifestLocation"
 fi
 
 for packageName in "${optionalDefaults[@]}"

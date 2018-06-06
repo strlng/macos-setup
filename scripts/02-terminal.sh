@@ -9,7 +9,7 @@ done
 DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
 
 cp $DIR/configs/vimrc ~/.vimrc
-cp $DIR/configs/bash_profile ~/.bash_profile
+#cp $DIR/configs/bash_profile ~/.bash_profile
 cp $DIR/configs/inoutrc ~/.inputrc
 
 mkdir -p ~/.vim/backups

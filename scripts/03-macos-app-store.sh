@@ -21,7 +21,7 @@ mas install 441258766 # Magnet
 mas install 682658836 # GarageBand
 mas install 451907568 # Paprika Recipe Manager
 mas install 411643860 # DaisyDisk
-mas install 443987910 # 1Password
+mas install 1333542190 # 1Password 7
 mas install 557168941 # Tweetbot
 mas install 975937182 # Fantastical 2
 mas install 409203825 # Numbers
