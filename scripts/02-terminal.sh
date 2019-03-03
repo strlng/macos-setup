@@ -8,9 +8,9 @@ while [ -h "$SOURCE" ]; do # resolve $SOURCE until the file is no longer a symli
 done
 DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
 
-cp $DIR/configs/vimrc ~/.vimrc
-#cp $DIR/configs/bash_profile ~/.bash_profile
-cp $DIR/configs/inoutrc ~/.inputrc
+cp $DIR/../configs/vimrc ~/.vimrc
+cp $DIR/../configs/bash_profile ~/.bash_profile
+cp $DIR/../configs/inputrc ~/.inputrc
 
 mkdir -p ~/.vim/backups
 mkdir -p ~/.vim/swaps

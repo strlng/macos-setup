@@ -11,16 +11,12 @@ manifestLocation='/Library/Managed Installs/manifests/SelfServeManifest'
 plistBuddy='/usr/libexec/PlistBuddy'
 
 # Add in "optional" default software
-optionalDefaults=("Atom"
-"Hazel"
+optionalDefaults=("Hazel"
 "iStatMenus"
 "MunkiAdmin"
 "Pacifist"
-"Shimo"
 "VMWareFusion"
 "FireFox"
-"GoogleChrome"
-"MSOffice2016"
 "AddPrinter_rm5115-copier")
 
 # Check to see if the file exists. If it doesn't, you may have to create it with an empty array; otherwise,
