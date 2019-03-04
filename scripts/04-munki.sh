@@ -17,6 +17,9 @@ optionalDefaults=("Hazel"
 "Pacifist"
 "VMWareFusion"
 "FireFox"
+"Code42CrashPlan"
+"Cisco_Jabber"
+"CiscoWebexMeetings"
 "AddPrinter_rm5115-copier")
 
 # Check to see if the file exists. If it doesn't, you may have to create it with an empty array; otherwise,

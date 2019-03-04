@@ -3,6 +3,10 @@
 # install mas-cli to install from the Mac App store
 brew install mas
 
+# sign in to app store to get app store installs to work
+open /Applications/App\ Store.app
+read -n 1 -s -r -p "Press any key to continue after signing in to App Store"
+
 # install macos apps
 mas install 497799835 #Xcode (10.0)
 
@@ -37,7 +41,3 @@ mas install 472226235 #LanScan (6.1.0)
 mas install 880001334 #Reeder (3.2.1)
 mas install 1224268771 #Screens 4 (4.6.7)
 mas install 1191449274 #ToothFairy (2.4.9)
-
-
-
-#sudo xcodebuild -license accept
