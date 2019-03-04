@@ -12,18 +12,16 @@ while [ -h "$SOURCE" ]; do # resolve $SOURCE until the file is no longer a symli
 done
 DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
 
-cp -r $DIR/configs/gnupg ~/.gnupg
-cp -r $DIR/configs/ssh ~/.ssh
-
 cp $DIR/configs/vimrc ~/.vimrc
-cp $DIR/configs/private/bash_profile ~/.bash_profile
 cp $DIR/configs/inputrc ~/.inputrc
 
+cp -r $DIR/private/gnupg ~/.gnupg
+cp -r $DIR/private/ssh ~/.ssh
+
+cp $DIR/private/bash_profile ~/.bash_profile
+cp $DIR/private/gitignore ~/.gitignore
 
 mkdir ~/Git
-
-#cd ~/Git && git clone git@bones.journalism.wisc.edu:sterling/macos-settings.git
-#cp ~/Git/macos-settings/configs/bash_profile ~/.bash_profile && source ~/.bash_profile
 
 cd ~/Git && git clone https://github.com/strlng/macos-setup
 read -n 1 -s -r -p "Press any key to continue after checking scripts/01-homebrew-install.sh"
