@@ -8,16 +8,11 @@ while [ -h "$SOURCE" ]; do # resolve $SOURCE until the file is no longer a symli
 done
 DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
 
-mkdir -p ~/.vim/backups
-mkdir -p ~/.vim/swaps
-mkdir -p ~/.vim/undo
-
 mkdir -p /tmp/terminal
 
-brew install bash-completion
 
 echo "...Installing Source Code Pro font"
-brew tap caskroom/fonts && brew cask install font-source-code-pro
+brew tap homebrew/cask-fonts && brew cask install font-source-code-pro
 
 echo "...Downloading base16-tomorrow-night vim color scheme"
 mkdir -p ~/.vim/colors

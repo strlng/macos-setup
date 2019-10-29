@@ -11,16 +11,16 @@ manifestLocation='/Library/Managed Installs/manifests/SelfServeManifest'
 plistBuddy='/usr/libexec/PlistBuddy'
 
 # Add in "optional" default software
-optionalDefaults=("Hazel"
-"iStatMenus"
+optionalDefaults=("iStatMenus"
 "MunkiAdmin"
 "Pacifist"
-"VMWareFusion"
+"VMWareFusionPro"
 "FireFox"
 "Code42CrashPlan"
 "Cisco_Jabber"
 "CiscoWebexMeetings"
-"AddPrinter_rm5115-copier")
+"SJMC-Printer-frontofficecolor"
+"Solstice")
 
 # Check to see if the file exists. If it doesn't, you may have to create it with an empty array; otherwise,
 if [ ! -f "$manifestLocation" ]; then
