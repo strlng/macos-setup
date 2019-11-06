@@ -10,7 +10,6 @@ DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
 
 mkdir -p /tmp/terminal
 
-
 echo "...Installing Source Code Pro font"
 brew tap homebrew/cask-fonts && brew cask install font-source-code-pro
 

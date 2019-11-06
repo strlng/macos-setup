@@ -20,6 +20,10 @@ optionalDefaults=("iStatMenus"
 "Cisco_Jabber"
 "CiscoWebexMeetings"
 "SJMC-Printer-frontofficecolor"
+"CreativeCloudDesktopApplication"
+"BBEdit"
+"Firefox"
+"iStatMenus"
 "Solstice")
 
 # Check to see if the file exists. If it doesn't, you may have to create it with an empty array; otherwise,
