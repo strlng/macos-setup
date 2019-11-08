@@ -15,13 +15,10 @@ mkdir -p ~/.vim/undo
 
 cp $DIR/private/gitignore ~/.gitignore
 
-read -n 1 -s -r -p "Press any key to continue after checking scripts/01-homebrew-install.sh"
 cd ~/Git/macos-setup && bash scripts/01-homebrew-install.sh
-read -n 1 -s -r -p "Press any key to continue after checking scripts/02-terminal.sh"
 cd ~/Git/macos-setup && bash scripts/02-terminal.sh
-read -n 1 -s -r -p "Press any key to continue after checking scripts/03-macos-app-store.sh"
 cd ~/Git/macos-setup && bash scripts/03-macos-app-store.sh
-read -n 1 -s -r -p "Press any key to continue after checking scripts/04-munki.sh"
 cd ~/Git/macos-setup && sudo bash scripts/04-munki.sh
+# Not using the games script right now
 #read -n 1 -s -r -p "Press any key to continue after checking scripts/05-games.sh"
 #cd ~/Git/macos-setup && bash scripts/05-games.sh

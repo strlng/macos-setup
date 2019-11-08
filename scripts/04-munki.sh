@@ -14,7 +14,7 @@ plistBuddy='/usr/libexec/PlistBuddy'
 optionalDefaults=("iStatMenus"
 "MunkiAdmin"
 "Pacifist"
-"VMWareFusionPro"
+"VMwareFusionPro"
 "FireFox"
 "Code42CrashPlan"
 "Cisco_Jabber"
