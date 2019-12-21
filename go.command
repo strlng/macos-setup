@@ -13,7 +13,7 @@ mkdir -p ~/.vim/backups
 mkdir -p ~/.vim/swaps
 mkdir -p ~/.vim/undo
 
-cp $DIR/private/gitignore ~/.gitignore
+cp $DIR/configs/gitignore ~/.gitignore
 
 cd ~/Git/macos-setup && bash scripts/01-homebrew-install.sh
 cd ~/Git/macos-setup && bash scripts/02-terminal.sh
