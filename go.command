@@ -13,12 +13,11 @@ mkdir -p ~/.vim/backups
 mkdir -p ~/.vim/swaps
 mkdir -p ~/.vim/undo
 
-cp $DIR/configs/gitignore ~/.gitignore
+cp $DIR/configs/zshrc ~/.zshrc
+cp -r $DIR/configs/zsh ~/.zsh
 
 cd ~/Git/macos-setup && bash scripts/01-homebrew-install.sh
 cd ~/Git/macos-setup && bash scripts/02-terminal.sh
 cd ~/Git/macos-setup && bash scripts/03-macos-app-store.sh
 cd ~/Git/macos-setup && sudo bash scripts/04-munki.sh
-# Not using the games script right now
-#read -n 1 -s -r -p "Press any key to continue after checking scripts/05-games.sh"
-#cd ~/Git/macos-setup && bash scripts/05-games.sh
+cd ~/Git/macos-setup && bash scripts/05-homebrew-apps.sh
