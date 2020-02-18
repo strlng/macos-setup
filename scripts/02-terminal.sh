@@ -6,7 +6,14 @@ while [ -h "$SOURCE" ]; do # resolve $SOURCE until the file is no longer a symli
   SOURCE="$(readlink "$SOURCE")"
   [[ $SOURCE != /* ]] && SOURCE="$DIR/$SOURCE" # if $SOURCE was a relative symlink, we need to resolve it relative to the path where the symlink file was located
 done
+
 DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
+
+mkdir -p ~/.zsh/git
+
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh/git/zsh-syntax-highlighting
+
+git clone git@github.com:zsh-users/zsh-autosuggestions.git ~/.zsh/git/zsh-autosuggestions
 
 mkdir -p /tmp/terminal
 
