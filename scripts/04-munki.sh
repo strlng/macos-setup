@@ -15,12 +15,14 @@ optionalDefaults=("iStatMenus"
 "MunkiAdmin"
 "Pacifist"
 "FireFox"
+"GoogleChrome"
 "Code42CrashPlan"
 "Cisco_Jabber"
 "CiscoWebexMeetings"
 "SJMC-Printer-frontofficecolor"
 "CreativeCloudDesktopApplication"
-"Solstice")
+"Solstice"
+"GlobalProtect")
 
 # Check to see if the file exists. If it doesn't, you may have to create it with an empty array; otherwise,
 if [ ! -f "$manifestLocation" ]; then
