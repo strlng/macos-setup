@@ -35,8 +35,8 @@ bindkey $'^[[B' down-line-or-search  # down arrow
 
 # set EDITOR to bbedit
 if [[ -x "/usr/local/bin/bbedit" ]]; then
-    export EDITOR="/usr/local/bin/bbedit -w --resume"
-fi  
+	export EDITOR="/usr/local/bin/bbedit -w --resume"
+fi
 
 PROMPT='%(?.%F{green}🌈.%F{red}🔥 %?)%f %F{green}%1~%f%b %# '
 
@@ -44,13 +44,14 @@ repo_dir="~/.zsh/git"
 
 # zsh-autosuggestions
 # https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md
-if [[ -f $repo_dir/zsh-autosuggestions/zsh-autosuggestions.zsh ]]; then 
-   source $repo_dir/zsh-autosuggestions/zsh-autosuggestions.zsh
+if [[ -f $repo_dir/zsh-autosuggestions/zsh-autosuggestions.zsh ]]; then
+	source $repo_dir/zsh-autosuggestions/zsh-autosuggestions.zsh
 fi
 
 # zsh-syntax-highlighting
 # (note, according to the docs, this must be loaded LAST)
 # https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md
 if [[ -r $repo_dir/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]]; then
-     source $repo_dir/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+	source $repo_dir/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 fi
+
